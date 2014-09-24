@@ -1,0 +1,73 @@
+*{
+	outline: 1px solid black;
+}
+
+body {
+	background-image: url('https://dl.dropboxusercontent.com/u/263968982/LatteLisa_coffee_table_books.JPG');
+	background-repeat: no-repeat;
+}
+
+.container {
+	margin: 3em auto;
+	width: 800px;
+}
+
+.container {
+	opacity: 0.6;
+	background-color: #6666FF;
+}
+
+.title {
+	text-align: center;
+	color: white;
+}
+
+.direct {
+	text-align: center;
+	color: white;
+}
+
+form {
+	display: inline-block;
+	margin-left: 240px;
+}
+
+header {
+	float: right;
+	margin-right: 60px;
+	font-size: 22px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+input{
+	height: 25px;
+	background-color: white;
+}
+
+.search {
+	width: 270px;
+}
+
+.button {
+	border-radius: 200px;
+	height: 60px;
+}
+
+.button:hover {
+	border-color: #66FFFF;
+}
+
+.scroll {
+	position: relative;
+	width:75%;
+	height:350px;
+	line-height:3em;
+	overflow:scroll;
+	padding:5px;
+	background-color: white;
+	display: none;
+}
