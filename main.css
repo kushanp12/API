@@ -4,10 +4,12 @@
 
 body {
 	background-color: #FFCC33;
+
+	min-width: 1133px;
 }
 
 .container {
-	margin: 1em auto;
+	margin-left: 44.5%;
 	width: 150px;
 
 	background-color: #CC33FF;
@@ -18,8 +20,12 @@ body {
 }
 
 .button-box{
+	position: inherit;
+}
 
+#answer-getter{
 	margin-left: 44%;
+	position: inherit;
 }
 
 .title {
@@ -52,6 +58,8 @@ mark{
 	border-radius: 200px;
 	height: 160px;
 	width: 160px;
+
+	margin: 1em auto;
 
 	border: none;
 
