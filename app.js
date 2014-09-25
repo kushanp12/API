@@ -1,68 +1,60 @@
 $(document).ready(function(){
-	$('.answer-getter').submit(function(e){
-		$('.scroll').show();
-		var query = $(this).find("input[name='tags']").val();
-		getRelated(query);
+	$('.desc').click(function(e){
+		$('.container, .button-box, header, .holder').hide();
+		$('#about').fadeIn('slow');
 		e.preventDefault();
+	})
+	$('.x').click(function(e){
+		$('#about').hide();
+		$('.container, .button-box, header, .holder').fadeIn('slow');
+		e.preventDefault();
+	})
+    $(".answer-getter").on("click", function(event) {
+    event.preventDefault();
+    console.log("Submit Button Clicked");
+    getPhotos();
+    $("#photos").show();
 	});
+
 });
 
 
-var showSimilar = function(similar){
-	
-	var result = $('.scroll .result').clone();
+var getPhotos = function() {
 
-	// Set the question properties in result
-	var similarName = result.find('.name');
-	similarName.text(similar.name);
+  var result = $.ajax({
+    url: "https://api.instagram.com/v1/tags/joking/media/recent?access_token=178445065.6c27c61.446d6cfa1bfa4246a27c2280f9cb6e76&callback=callbackFunction",
+    dataType: "jsonp",
+    cache: false,
+    type: "GET",
+  })
+  
+  .done(function(result){
 
-	// set the date asked property in result
-	var similarType = result.find('.type');
-	similarType.text(similar.type);
+    console.log("success!");
 
-	// set the #views for question property in result
-	var similarInfo = result.find('.info');
-	similarInfo.text(similar.info);
+      for(var i = 0; i < 100; i++) {
 
-};
+      
 
-function createCORSRequest(method, url){
-    var xhr = new XMLHttpRequest();
-    if ("withCredentials" in xhr){
-        // XHR has 'withCredentials' property only if it supports CORS
-        xhr.open(method, url, true);
-    } else if (typeof XDomainRequest != "undefined"){ // if IE use XDR
-        xhr = new XDomainRequest();
-        xhr.open(method, url);
-    } else {
-        xhr = null;
+     var showPhoto = function() {
+
+          var photo = $("#fringe").clone();
+
+          photo.attr('src', result.data[i].images.thumbnail.url);
+          photo.attr('id', result.data[i].images.thumbnail.url);
+
+          return photo;
+        }
+
+
+      $("#photos").append(showPhoto);
     }
-    return xhr;
+  }
+
+)
+
 }
 
-var getRelated = function(query){
 
-	createCORSRequest('get', 'http://www.tastekid.com/ask/ws');
 
-	var request = {
-		f: 'theexc5458', 
-		k: 'ntdhmzg2mtm4',
-		q: query,
-		verbose: '1',
-		format: 'XML'
-	};
 
-	var result = $.ajax({
-			url: 'http://www.tastekid.com/ask/ws',
-			data: request,
-			dataType: 'XML',
-			type: 'GET',
-			crossDomain: true
-		})
-	.done(function(result){
-		$.each(result.items, function(i, item) {
-			var question = showSimilar(item);
-			$('.results').append(question);
-		});
-	})
-};

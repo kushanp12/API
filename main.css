@@ -1,73 +1,138 @@
 *{
-	outline: 1px solid black;
+	font-family: 'Amatic SC', cursive;
 }
 
 body {
-	background-image: url('https://dl.dropboxusercontent.com/u/263968982/LatteLisa_coffee_table_books.JPG');
-	background-repeat: no-repeat;
+	background-color: #FFCC33;
 }
 
 .container {
-	margin: 3em auto;
-	width: 800px;
+	margin: 1em auto;
+	width: 150px;
+
+	background-color: #CC33FF;
 }
 
 .container {
-	opacity: 0.6;
-	background-color: #6666FF;
+	z-index: 1009;
+}
+
+.button-box{
+
+	margin-left: 44%;
 }
 
 .title {
 	text-align: center;
 	color: white;
-}
 
-.direct {
-	text-align: center;
-	color: white;
-}
-
-form {
-	display: inline-block;
-	margin-left: 240px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 56px;
 }
 
 header {
 	float: right;
 	margin-right: 60px;
-	font-size: 22px;
-}
+	font-size: 30px;
 
-a{
-	text-decoration: none;
 	color: white;
 }
 
-input{
-	height: 25px;
-	background-color: white;
+mark{
+	background-color: #0066FF;
+	color: white;
 }
 
-.search {
-	width: 270px;
+.desc{
+	text-decoration: none;
+	color: black;
 }
 
-.button {
+.answer-getter {
 	border-radius: 200px;
-	height: 60px;
+	height: 160px;
+	width: 160px;
+
+	border: none;
+
+	background-color: #00CC33;
+
+	font-family: 'Amatic SC', cursive;
+
+	text-align: center;
 }
 
-.button:hover {
-	border-color: #66FFFF;
+.text {
+	font-size: 26px;
+	color: white;
+
+	margin-top: 0%;
 }
 
-.scroll {
-	position: relative;
-	width:75%;
-	height:350px;
-	line-height:3em;
-	overflow:scroll;
-	padding:5px;
-	background-color: white;
+.answer-getter:hover {
+	border: 2px solid;
+	border-color: #FF9966;
+}
+
+
+.photos {
 	display: none;
+	padding: 15px 50px 50px 170px;
+	margin: 0 100px 0 100px;
+
+}
+
+#photos img{
+	margin-top: 40px;
+
+}
+
+#fringe{
+	height: 0px;
+	width: 0px;
+}
+
+img{
+	transition: width 3s;
+	transition: height 3s;
+	height: 200px;
+	width: 200px;
+
+	margin-right: 6px;
+}
+
+img:hover{
+	height: 200px;
+	width: 200px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#about{
+	display: none;
+
+	margin: 1em auto;
+
+	margin-top: 100px;
+
+	width: 600px;
+
+	background-color: #FF6600;
+}
+
+.x{
+	height: 40px;
+	width: 40px;
+
+	background: url('https://dl.dropboxusercontent.com/u/263968982/rsz_1rsz_cross.png');
+	background-repeat: no-repeat;
+}
+
+.about{
+	text-align: center;
+	font-size: 36px;
+
+	padding: 50px;
 }

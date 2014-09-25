@@ -6,37 +6,32 @@
 	<link rel="stylesheet" href="main.css">
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="app.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<header><a href="#">About</a></header>
+	<header><a href="#about" class = 'desc'><mark>Why Laugh</mark></a></header>
 	<div class='container'>
-	<h1 class='title'>The Excess</h1>
-	<h4 class='direct'>Enter your favorite Movie, TV Show, Music, Books, Authors, and/or Games and experience The Excess...</h4>
-
-	<form class='answer-getter' onsubmit = 'return false'>
-		<input class = 'search' type="text" placeholder='e.g., Transformers; J.K. Rowling' name="tags" size="30" autofocus required>
-		<input class = 'button'type="submit" value="Submit">
-	</form>
+	<h1 class='title'>The Laugh</h1>
 	</div>
+	<div class = 'button-box'>
+	<button class = 'answer-getter'><p class = 'text'>Start Laughing!</p></button>
+	</div>
+	<section id='about'>
+		<article class = 'about'>
+			<a href="#" class = 'close'>
+				<div class ='x'></div>
+			</a>
+			<p>Humor is infectious. The sound of roaring laughter is far more contagious than any cough, sniffle, or sneeze. When laughter is shared, it binds people together and increases happiness. The Laugh is a website that allows you to take a few minutes out of your day and view some of the funnier pictures posted on social media! </p>
+		</article>
+	</section>
+
+	<img id = 'fringe' src alt>
 	<!-- Codes by HTML.am -->
-	<div class = 'scroll'> 
-		<dl class="result question">
-			<dt>Name</dt>
-				<dd class="name"><a href="" target="_blank"></a></dd>
-			<dt>Type</dt>
-				<dd class="type"></dd>
-			<dt>Info</dt>
-				<dd class="info"></dd>
-			<dt>URL</dt>
-				<dd class="url"></dd>
-			<dt>Title</dt>
-				<dd class="label"></dd>
-			<dt>YouTube link</dt>
-				<dd class="youtube"></dd>
-			<dt>ID</dt>
-				<dd class="id"></dd>
-		</dl>
+	<div class = 'holder'>
+	<div class = 'photos' id = 'photos'> 
+	
 	</div>
-
+	</div>
 </body>
 </html>
