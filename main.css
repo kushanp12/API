@@ -9,10 +9,8 @@ body {
 }
 
 .container {
-	margin-left: 44.5%;
-	width: 150px;
-
-	background-color: #CC33FF;
+	margin-left: 40.5%;
+	width: 250px;
 }
 
 .container {
@@ -30,10 +28,10 @@ body {
 
 .title {
 	text-align: center;
-	color: white;
+	color: #CC33FF;
 
 	font-family: 'Amatic SC', cursive;
-	font-size: 56px;
+	font-size: 66px;
 }
 
 header {
@@ -44,14 +42,13 @@ header {
 	color: white;
 }
 
-mark{
-	background-color: #0066FF;
-	color: white;
-}
-
 .desc{
 	text-decoration: none;
-	color: black;
+	color: #0066FF;
+
+	padding: 3px;
+
+	border: 2px dashed white;
 }
 
 .answer-getter {
