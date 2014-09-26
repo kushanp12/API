@@ -17,14 +17,6 @@ body {
 	z-index: 1009;
 }
 
-.button-box{
-	position: inherit;
-}
-
-#answer-getter{
-	margin-left: 19%;
-}
-
 .title {
 	text-align: center;
 	color: #CC33FF;
@@ -49,6 +41,17 @@ header {
 
 	border: 2px dashed white;
 }
+
+.desc:hover {
+	border: 2px dashed #0066FF;
+	color: white;
+}
+
+
+#answer-getter{
+	margin-left: 19%;
+}
+
 
 .answer-getter {
 	border-radius: 200px;
@@ -119,7 +122,7 @@ img:hover{
 
 	margin: 1em auto;
 
-	margin-top: 100px;
+	margin-top: 40px;
 
 	width: 600px;
 
@@ -138,5 +141,5 @@ img:hover{
 	text-align: center;
 	font-size: 36px;
 
-	padding: 50px;
+	padding: 50px 50px 20px 50px;
 }
