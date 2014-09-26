@@ -11,9 +11,10 @@ $(document).ready(function(){
 	})
     $(".answer-getter").on("click", function(event) {
     event.preventDefault();
+    $('#answer-getter').hide();
     console.log("Submit Button Clicked");
     getPhotos();
-    $("#photos").show();
+    $("#photos").fadeIn(2000);
 	});
 
 });
