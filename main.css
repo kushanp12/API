@@ -1,23 +1,51 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
 *{
-	font-family: 'Amatic SC', cursive;
+	/* Font for all text written on site */
+	font-family: 'Amatic SC', cursive; 
 }
 
 body {
+
+	/* Color and min-width so <div> and <section> dont shift around*/
 	background-color: #FFCC33;
 
 	min-width: 750px;
 }
 
 .container {
+	/* Margin for the <h1> tag and <button> */
 	margin: 1em auto;
 	width: 250px;
 }
 
-.container {
-	z-index: 1009;
-}
-
 .title {
+
+	/* Center-ing the text within the container */
 	text-align: center;
 	color: #CC33FF;
 
@@ -26,14 +54,51 @@ body {
 }
 
 header {
+	/* Deals with 'Why Laugh' */
 	float: right;
+
+	margin-top: 20px;
 	margin-right: 60px;
 	font-size: 30px;
+}
 
-	color: white;
+#about{
+	/* Poisitions the #about and gives it color */
+
+	display: none;
+
+	margin: 1em auto;
+
+	margin-top: 40px;
+
+	width: 600px;
+
+	background-color: #FF6600;
+}
+
+.x{
+	/* Close out button in the Why Laugh */
+
+	height: 40px;
+	width: 40px;
+
+	background: url('https://dl.dropboxusercontent.com/u/263968982/rsz_1rsz_cross.png');
+	background-repeat: no-repeat;
+}
+
+.about{
+	/* Handles the font sixe and poition in #about */
+
+	text-align: center;
+	font-size: 36px;
+
+	padding: 50px 50px 20px 50px;
 }
 
 .desc{
+
+	/* The color and position of text in Why Laugh */
+
 	text-decoration: none;
 	color: #0066FF;
 
@@ -49,6 +114,8 @@ header {
 
 
 #answer-getter{
+
+	/* Margin for the button within .container */
 	margin-left: 19%;
 }
 
@@ -70,6 +137,9 @@ header {
 }
 
 .text {
+
+	/* Deals with the text within the <button> */
+
 	font-size: 26px;
 	color: white;
 
@@ -84,6 +154,8 @@ header {
 
 
 .photos {
+	/* Where all the images from IG go. Deals with the width and the padding withing the container. */
+
 	display: none;
 	padding: 15px 50px 50px 170px;
 	margin: 0 100px 0 0;
@@ -97,7 +169,7 @@ header {
 
 }
 
-#fringe{
+#laugh{
 	height: 0px;
 	width: 0px;
 }
@@ -118,31 +190,4 @@ img:hover{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-}
-
-#about{
-	display: none;
-
-	margin: 1em auto;
-
-	margin-top: 40px;
-
-	width: 600px;
-
-	background-color: #FF6600;
-}
-
-.x{
-	height: 40px;
-	width: 40px;
-
-	background: url('https://dl.dropboxusercontent.com/u/263968982/rsz_1rsz_cross.png');
-	background-repeat: no-repeat;
-}
-
-.about{
-	text-align: center;
-	font-size: 36px;
-
-	padding: 50px 50px 20px 50px;
 }
