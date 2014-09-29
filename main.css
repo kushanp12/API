@@ -151,17 +151,18 @@ header {
 	border-color: #FF9966;
 }
 
+.holder{
+	width: 1133px;
 
+	margin: auto;
+}
 
 .photos {
 	/* Where all the images from IG go. Deals with the width and the padding withing the container. */
 
 	display: none;
-	padding: 15px 50px 50px 170px;
-	margin: 0 100px 0 0;
-
-	width: 1133px;
-
+	padding: 15px 50px 50px 50px;
+	margin: auto;
 }
 
 #photos img{
@@ -181,13 +182,4 @@ img{
 	width: 200px;
 
 	margin-right: 6px;
-}
-
-img:hover{
-	height: 200px;
-	width: 200px;
-
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 }
