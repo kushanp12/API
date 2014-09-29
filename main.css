@@ -152,16 +152,14 @@ header {
 }
 
 .holder{
-	width: 1133px;
 
 	margin: auto;
 }
 
 .photos {
 	/* Where all the images from IG go. Deals with the width and the padding withing the container. */
-
+	width: 1100px;
 	display: none;
-	padding: 15px 50px 50px 50px;
 	margin: auto;
 }
 
