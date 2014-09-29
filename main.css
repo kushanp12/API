@@ -49,6 +49,8 @@ body {
 	text-align: center;
 	color: #CC33FF;
 
+	margin: auto;
+
 	font-family: 'Amatic SC', cursive;
 	font-size: 66px;
 }
@@ -116,7 +118,7 @@ header {
 #answer-getter{
 
 	/* Margin for the button within .container */
-	margin-left: 19%;
+	margin: 19%;
 }
 
 
@@ -125,7 +127,7 @@ header {
 	height: 160px;
 	width: 160px;
 
-	margin: 1em auto;
+	margin: auto;
 
 	border: none;
 
