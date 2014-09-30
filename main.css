@@ -29,6 +29,11 @@ footer, header, hgroup, menu, nav, section {
 	font-family: 'Amatic SC', cursive; 
 }
 
+html {
+	width: 100%;
+	height: 100%;
+}
+
 body {
 
 	/* Color and min-width so <div> and <section> dont shift around*/
