@@ -30,7 +30,7 @@ var getGram = function() {
 	/* var result makes a 'GET' ajax call to the IG API with data type being JSONP */
 
   var result = $.ajax({
-    url: "https://api.instagram.com/v1/tags/joking/media/recent?access_token=178445065.6c27c61.446d6cfa1bfa4246a27c2280f9cb6e76&callback=callbackFunction",
+    url: "https://api.instagram.com/v1/tags/joking/media/recent?access_token=1524283766.3b32a5d.d3b28a0017d442f790f28a667effc75d&callback=callbackFunction",
     dataType: "jsonp",
     cache: false,
     type: "GET",
